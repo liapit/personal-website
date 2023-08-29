@@ -4,7 +4,7 @@
 
 body {
     font-family: 'Open Sans', 'Arial';         /* Sets the default font for the whole webpage */
-    font-size: 17px;
+    font-size: 1rem;
     margin: 0;                                                 /* Removes any default margins around the body */
     padding: 0;                                                    /* Removes any default padding inside the body */
     color: #252737;
