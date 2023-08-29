@@ -77,7 +77,7 @@ p, a, span {
 
 .pagesubtitlerow {
     font-family: 'Tangerine', 'Arial';
-    font-size: 60px;
+    font-size: 3.75rem;
     background-color: #ecf7fb;
     padding: 0 0 40px 0;
     text-align: center;
@@ -93,14 +93,6 @@ p, a, span {
 .about-me-text {
     background-color: #ecf7fb;
     padding: 15px;
-}
-.about-me-description {
-    background-color: #ecf7fb;            /* Sets the background color of this element */
-    font-size: 17px;
-}
-
-.about-me-description p {
-    padding: 1.6px;
     text-align: center;
 }
 
@@ -147,65 +139,48 @@ p, a, span {
 .experiencesnames {
     font-family: 'Tangerine', 'Arial';
     font-weight: 700;
-    font-size: 50px;
-    margin: 20px 20px 30px 0;                    /* Adds space below each block */
+    font-size: 3.125rem;
     border-bottom: 5px solid #252737;
 }
 
 .experiences p {
-    margin-bottom: 20px;                    /* Space beneath the title */
+   padding: 5px;
 }
 
 /* Space between each individual experience or education block */
 .experiences-overview {
-    margin: 20px 20px 30px 0;                    /* Adds space below each block */
+    margin: 5px;
     border-bottom: 2px dotted #b8bacc;     /* Adds a bottom border for visual separation */
 }
 
 /* Styling for the main title of each individual job or education entry */
 .cv-title p {
-    font-size: 25px;                        /* Smaller font than the section title */
+    font-size: 1.563rem;                        /* Smaller font than the section title */
     font-weight: bold;                      /* Make it bold */
-    margin-bottom: 5px;                    /* Space beneath the title */
 }
 
 /* Styling for the company name or institution name */
 .cv-company {
-    font-size: 17px;  
     color: #88b5c5;                      /* Font size smaller than the main title */
-    margin: 0;
 }
 .cv-date-location {
-    font-size: 10px;
     display: flex;
     gap: 1px;
-    margin: 0;
-    padding: 0;
 }
 
-.cv-company-description {
-    font-size: 13px;                        /* Font size smaller than the main title */
-    margin: 0;
-    padding: 0;
-}
-
-.cv-job-achievement {
-    font-size: 17px;
-}
 
 .cv-job-description {
-    font-size: 17px;
     text-align: left;
     list-style-type: circle;                  /* Use regular bullet points */;
     list-style-position: outside;
 }
 
 .cv-job-description ul {
-    padding-left: 20px;  /** Adjust this value to move bullet points left or right */
+    padding-left: 20px;                 /** Adjust this value to move bullet points left or right */
 }
 
 .cv-job-description li {
-text-indent: 1px;
+    text-indent: 1px;
 }
 
 .project-row {
