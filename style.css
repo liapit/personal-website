@@ -1,0 +1,225 @@
+/* ====================
+   BODY MAIN STYLE
+   ==================== */
+
+body {
+    font-family: 'Open Sans', 'Arial';         /* Sets the default font for the whole webpage */
+    font-size: 17px;
+    margin: 0;                                                 /* Removes any default margins around the body */
+    padding: 0;                                                    /* Removes any default padding inside the body */
+    color: #252737;
+    line-height: 1.3;
+    margin-block-start: 0px;
+    margin-block-end: 0px;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+p, a, span {
+    margin: 0 0 0 0;
+}
+
+
+/* ====================
+   PICTURE ROW STYLES (PICTURE)
+   ==================== */
+.picturerow {
+    background-image: url('SP.jpg');  /* Sets the background image of this element */
+    background-position: center;      /* Centers the background image */
+    height: 400px;                    /* Sets a fixed height for this row */
+    position: relative;               /* To position the pseudo-element relative to this container */
+    overflow: hidden;                 /* Ensures nothing spills outside the container */
+}
+
+
+/* ====================
+   PAGE INDEX ROW STYLES
+   ==================== */
+
+.indexrow {
+    background-color: #252737;
+    padding: 1.6px 0 1.6px 0;
+}
+
+.indexrow-text {
+    background-color: #252737;       /* Sets the background color of this element */
+    display: flex;                     /* Activates the flexbox layout for this element. This means its children will lay out in a line (row), and you can use other flex properties to control their alignment and distribution. */
+    width: 100%;                      /* Sets the width to cover the full viewport width */
+    justify-content: center;          /* Horizontally centers the direct children (flex items) */
+    align-items: center;              /* Vertically centers the direct children */
+    padding: 16px 0 16px 0;     
+}
+
+.index {                               /* Targets the anchor elements within #indexrow */
+    text-decoration: none;             /* Removes the underline from links */
+    font-size: 17px;                   /* Increases the font size */
+    color: #ecf7fb;                  /* Changes the link color to white */
+    text-transform: uppercase;         /* Converts text to uppercase */
+    margin: 0 20px;                    /* Adds horizontal margins to each link */
+}
+
+.index:hover {                         /* Adds a hover effect to the links */
+    color: #baeafb;                  /* Changes the link color on hover */
+}
+
+/* ====================
+   PAGE TITLE ROW STYLES
+   ==================== */
+.pagetitlerow {
+    background-color: #ecf7fb;
+    padding: 40px 0 5px 0;
+    font-family: 'Tangerine', 'Arial';
+    font-weight: 700;
+    text-align: center;
+    font-size: 100px;
+}
+
+
+.pagesubtitlerow {
+    font-family: 'Tangerine', 'Arial';
+    font-size: 60px;
+    background-color: #ecf7fb;
+    padding: 0 0 40px 0;
+    text-align: center;
+}
+
+
+
+
+/* ====================
+   ABOUT PAGE: TEXT ROW STYLES
+   ==================== */
+
+.about-me-text {
+    background-color: #ecf7fb;
+    padding: 15px;
+}
+.about-me-description {
+    background-color: #ecf7fb;            /* Sets the background color of this element */
+    font-size: 17px;
+}
+
+.about-me-description p {
+    padding: 1.6px;
+    text-align: center;
+}
+
+/* ====================
+   CV PAGE STYLE
+   ==================== */
+
+/* Base styles for the two column layout */
+.cv-row {
+    display: flex;                          /* Use Flexbox for layout */
+    flex-direction: row;
+    justify-content: space-between;         /* Distributes items evenly, maximizing the space between items */
+    gap: 15px;                              /* Space between the two columns */
+    padding: 15px;                          /* Padding around the content */
+    background-color: #ecf7fb;
+    min-height: 1000px;
+}
+
+.cv-right-side {
+    flex: 50%;
+}
+.cv-left-side {
+    flex: 50%;
+}
+
+
+.cv-row-title {
+    background-color: #ecf7fb;
+    padding: 40px 0 0 0;
+    font-family: 'Tangerine', 'Arial';
+    font-weight: 700;
+    text-align: center;
+    font-size: 100px;
+}
+
+/* Base styling for each "experiences" container, which includes both Job Experiences and Education */
+.experiences {
+    flex: 1;                                /* Takes equal width space for both job experiences and education columns */
+    padding: 20px;                          /* Internal spacing */
+}
+
+/* Styling for the titles within each experience (like "Job Experiences" and "Education") */
+
+.experiencesnames {
+    font-family: 'Tangerine', 'Arial';
+    font-weight: 700;
+    font-size: 50px;
+    margin: 20px 20px 30px 0;                    /* Adds space below each block */
+    border-bottom: 5px solid #252737;
+}
+
+.experiences p {
+    margin-bottom: 20px;                    /* Space beneath the title */
+}
+
+/* Space between each individual experience or education block */
+.experiences-overview {
+    margin: 20px 20px 30px 0;                    /* Adds space below each block */
+    border-bottom: 2px dotted #b8bacc;     /* Adds a bottom border for visual separation */
+}
+
+/* Styling for the main title of each individual job or education entry */
+.cv-title p {
+    font-size: 25px;                        /* Smaller font than the section title */
+    font-weight: bold;                      /* Make it bold */
+    margin-bottom: 5px;                    /* Space beneath the title */
+}
+
+/* Styling for the company name or institution name */
+.cv-company {
+    font-size: 17px;  
+    color: #88b5c5;                      /* Font size smaller than the main title */
+    margin: 0;
+}
+.cv-date-location {
+    font-size: 10px;
+    display: flex;
+    gap: 1px;
+    margin: 0;
+    padding: 0;
+}
+
+.cv-company-description {
+    font-size: 13px;                        /* Font size smaller than the main title */
+    margin: 0;
+    padding: 0;
+}
+
+.cv-job-achievement {
+    font-size: 17px;
+}
+
+.cv-job-description {
+    font-size: 17px;
+    text-align: left;
+    list-style-type: circle;                  /* Use regular bullet points */;
+    list-style-position: outside;
+}
+
+.cv-job-description ul {
+    padding-left: 20px;  /** Adjust this value to move bullet points left or right */
+}
+
+.cv-job-description li {
+text-indent: 1px;
+}
+
+.project-row {
+    background-color: #ecf7fb;
+    padding: 20px 20px 30px 40px;
+}
+
+
+@media (max-width: 767px) {
+    .cv-row {
+        flex-direction: column;  /* Stack children vertically */
+    }
+
+    .cv-left-side, .cv-right-side {
+        flex-basis: 100%;  /* Take full width of the parent */
+    }
+}
