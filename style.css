@@ -36,31 +36,35 @@ p, a, span {
    PAGE INDEX ROW STYLES
    ==================== */
 
-.indexrow {
+
+   .indexrow {
     background-color: #252737;
     padding: 1.6px 0 1.6px 0;
 }
 
 .indexrow-text {
-    background-color: #252737;       /* Sets the background color of this element */
-    display: flex;                     /* Activates the flexbox layout for this element. This means its children will lay out in a line (row), and you can use other flex properties to control their alignment and distribution. */
-    width: 100%;                      /* Sets the width to cover the full viewport width */
-    justify-content: center;          /* Horizontally centers the direct children (flex items) */
-    align-items: center;              /* Vertically centers the direct children */
+    background-color: #252737;       
+    display: flex;                     
+    width: 100%;                      
+    justify-content: center;          
+    align-items: center;              
     padding: 16px 0 16px 0;     
 }
 
-.index {                               /* Targets the anchor elements within #indexrow */
-    text-decoration: none;             /* Removes the underline from links */
-    font-size: 17px;                   /* Increases the font size */
-    color: #ecf7fb;                  /* Changes the link color to white */
-    text-transform: uppercase;         /* Converts text to uppercase */
-    margin: 0 20px;                    /* Adds horizontal margins to each link */
+.index {                               
+    text-decoration: none;             
+    font-size: 17px;                   
+    color: #ecf7fb;                  
+    text-transform: uppercase;         
+    margin: 0 20px;                    
 }
 
-.index:hover {                         /* Adds a hover effect to the links */
-    color: #baeafb;                  /* Changes the link color on hover */
+/* Style for the active index link */
+.index.active {
+    border-bottom: 2px solid red; /* Adds a bottom border for active link */
 }
+
+
 
 /* ====================
    PAGE TITLE ROW STYLES
@@ -166,6 +170,7 @@ p, a, span {
 .cv-date-location {
     display: flex;
     gap: 1px;
+    pointer-events: none;   /** Disable any clickable behavior */
 }
 
 
