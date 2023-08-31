@@ -151,6 +151,10 @@ p, a, span {
    padding: 5px;
 }
 
+.experience-period {
+    text-decoration: none;
+}
+
 /* Space between each individual experience or education block */
 .experiences-overview {
     margin: 5px;
