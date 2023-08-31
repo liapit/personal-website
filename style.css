@@ -61,7 +61,7 @@ p, a, span {
 
 /* Style for the active index link */
 .index.active {
-    border-bottom: 2px solid red; /* Adds a bottom border for active link */
+    border-bottom: 2px solid #ecf7fb; /* Adds a bottom border for active link */
 }
 
 
