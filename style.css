@@ -48,7 +48,11 @@ p, a, span {
     width: 100%;                      
     justify-content: center;          
     align-items: center;              
-    padding: 16px 0 16px 0;     
+    padding: 16px 0 16px 0; 
+}
+
+.indexrow-text :hover {
+    color: #699fb2;
 }
 
 .index {                               
