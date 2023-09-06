@@ -74,7 +74,6 @@ p, a, span {
    PAGE TITLE ROW STYLES
    ==================== */
 .pagetitlerow {
-    background-color: #ecf7fb;
     padding: 40px 0 5px 0;
     font-family: 'Tangerine', 'Arial';
     font-weight: 700;
@@ -86,7 +85,6 @@ p, a, span {
 .pagesubtitlerow {
     font-family: 'Tangerine', 'Arial';
     font-size: 3.75rem;
-    background-color: #ecf7fb;
     padding: 0 0 40px 0;
     text-align: center;
 }
@@ -98,8 +96,16 @@ p, a, span {
    ABOUT PAGE: TEXT ROW STYLES
    ==================== */
 
+.aboutmebackground {
+    background-image:
+        linear-gradient(#e1ebfc70, #ffffff), /* overlay, 50% opacity */
+        url('backgroundaboutme.jpg'); 
+    background-size: cover; /* This will cover the entire viewport of the .cv-row div */
+    background-repeat: no-repeat; /* Ensures the image doesn't repeat */
+    background-position: center; /* Centers the image in the div */
+}
+
 .about-me-text {
-    background-color: #ecf7fb;
     padding: 15px;
     text-align: center;
 }
@@ -115,8 +121,13 @@ p, a, span {
     justify-content: space-between;         /* Distributes items evenly, maximizing the space between items */
     gap: 15px;                              /* Space between the two columns */
     padding: 15px;                          /* Padding around the content */
-    background-color: #ecf7fb;
     min-height: 1000px;
+    background-image:
+        linear-gradient(#ffffff, #e1ebfc70), /* overlay, 50% opacity */
+        url('backgroundcv.jpg'); 
+    background-size: cover; /* This will cover the entire viewport of the .cv-row div */
+    background-repeat: no-repeat; /* Ensures the image doesn't repeat */
+    background-position: center; /* Centers the image in the div */
 }
 
 .cv-right-side {
@@ -128,7 +139,6 @@ p, a, span {
 
 
 .cv-row-title {
-    background-color: #ecf7fb;
     padding: 40px 0 0 0;
     font-family: 'Tangerine', 'Arial';
     font-weight: 700;
@@ -148,8 +158,28 @@ p, a, span {
     font-family: 'Tangerine', 'Arial';
     font-weight: 700;
     font-size: 3.125rem;
-    border-bottom: 5px solid #252737;
+    position: relative; /** Enables positioning for pseudo-elements */
 }
+
+.experiencesnames::before,
+.experiencesnames::after {
+    content: ""; /** Necessary for pseudo-elements to be visible */
+    position: absolute; /** Absolutely position relative to the parent element */
+    bottom: 0; /** Position at the bottom of the parent element */
+    width: 80%; /** Set the width of the curves */
+    height: 5px; /** Height of the border */
+    background-color: #252737; /** Border color */
+    border-radius: 40%; /** Makes the ends circular */
+}
+
+.experiencesnames::before {
+    left: 0; /** Position the left curve at the left end */
+}
+
+.experiencesnames::after {
+    right: 0; /** Position the right curve at the right end */
+}
+
 
 .experiences p {
    padding: 5px;
