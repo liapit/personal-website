@@ -79,11 +79,11 @@ p, a, span {
 
 }
 
-.pagesubtitlerow p {
-        color: #fff;
-    }
-    
+.pagesubtitlerow a {
+    text-decoration: none;
+    color: #fff;
 
+}
 
 
 
@@ -96,6 +96,11 @@ p, a, span {
 .about-me-text {
     padding: 15px;
     text-align: center;
+}
+
+.about-me-text a {
+    text-decoration: none;
+    color: #fff;
 }
 
 /* ====================
@@ -117,6 +122,11 @@ p, a, span {
 }
 .cv-left-side {
     flex: 50%;
+}
+
+.cv-date-location a {
+    text-decoration: none;
+    color: #fff;
 }
 
 
@@ -181,6 +191,16 @@ p, a, span {
     font-weight: bold;                      /* Make it bold */
 }
 
+.cv-title a {
+    text-decoration: none;
+    color: #fff;
+} 
+
+.cv-company a {
+    text-decoration: none;
+    color: #fff;
+} 
+
 /* Styling for the company name or institution name */
 .cv-date-location {
     display: flex;
@@ -201,6 +221,11 @@ p, a, span {
 
 .cv-job-description li {
     text-indent: 1px;
+}
+
+.cv-job-achievement a {
+    text-decoration: none;
+    color: #fff;
 }
 
 .project-row {
