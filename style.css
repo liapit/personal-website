@@ -3,11 +3,11 @@
    ==================== */
 
 body {
-    font-family: 'Open Sans', 'Arial';         /* Sets the default font for the whole webpage */
-    font-size: 1rem;
-    margin: 0;                                                 /* Removes any default margins around the body */
-    padding: 0;                                                    /* Removes any default padding inside the body */
-    color: #252737;
+    background-color: #252525;
+    color: #fff;
+    font-family: 'Ubuntu Mono', 'Arial';
+    font-size: 1.5rem;
+    padding: 0;
     line-height: 1.3;
     margin-block-start: 0px;
     margin-block-end: 0px;
@@ -15,57 +15,48 @@ body {
     margin-inline-end: 0px;
 }
 
+.bodystyle {
+    margin: 50px 50px 0px 50px;
+}  
+
+.green-text {
+    color: #01ff00;
+}
+
 p, a, span {
     margin: 0 0 0 0;
 }
-
-
-/* ====================
-   PICTURE ROW STYLES (PICTURE)
-   ==================== */
-.picturerow {
-    background-image: url('SP.jpg');  /* Sets the background image of this element */
-    background-position: center;      /* Centers the background image */
-    height: 400px;                    /* Sets a fixed height for this row */
-    position: relative;               /* To position the pseudo-element relative to this container */
-    overflow: hidden;                 /* Ensures nothing spills outside the container */
-}
-
 
 /* ====================
    PAGE INDEX ROW STYLES
    ==================== */
 
 
-   .indexrow {
-    background-color: #252737;
-    padding: 1.6px 0 1.6px 0;
-}
-
-.indexrow-text {
-    background-color: #252737;       
+.indexrow-text {     
     display: flex;                     
     width: 100%;                      
     justify-content: center;          
-    align-items: center;              
-    padding: 16px 0 16px 0; 
+    align-items: center;
 }
 
+.indexrow-text a {
+    color: #fff;
+}        
+
 .indexrow-text :hover {
-    color: #699fb2;
+    color: #01ff00;
 }
 
 .index {                               
     text-decoration: none;             
-    font-size: 17px;                   
-    color: #ecf7fb;                  
+    font-size: 17px;             
     text-transform: uppercase;         
     margin: 0 20px;                    
 }
 
 /* Style for the active index link */
 .index.active {
-    border-bottom: 2px solid #ecf7fb; /* Adds a bottom border for active link */
+    border-bottom: 2px solid #01ff00;
 }
 
 
@@ -75,7 +66,6 @@ p, a, span {
    ==================== */
 .pagetitlerow {
     padding: 40px 0 5px 0;
-    font-family: 'Tangerine', 'Arial';
     font-weight: 700;
     text-align: center;
     font-size: 100px;
@@ -83,11 +73,17 @@ p, a, span {
 
 
 .pagesubtitlerow {
-    font-family: 'Tangerine', 'Arial';
     font-size: 3.75rem;
     padding: 0 0 40px 0;
     text-align: center;
+
 }
+
+.pagesubtitlerow p {
+        color: #fff;
+    }
+    
+
 
 
 
@@ -96,14 +92,6 @@ p, a, span {
    ABOUT PAGE: TEXT ROW STYLES
    ==================== */
 
-.aboutmebackground {
-    background-image:
-        linear-gradient(#e1ebfc70, #ffffff), /* overlay, 50% opacity */
-        url('backgroundaboutme.jpg'); 
-    background-size: cover; /* This will cover the entire viewport of the .cv-row div */
-    background-repeat: no-repeat; /* Ensures the image doesn't repeat */
-    background-position: center; /* Centers the image in the div */
-}
 
 .about-me-text {
     padding: 15px;
@@ -122,12 +110,6 @@ p, a, span {
     gap: 15px;                              /* Space between the two columns */
     padding: 15px;                          /* Padding around the content */
     min-height: 1000px;
-    background-image:
-        linear-gradient(#ffffff, #e1ebfc70), /* overlay, 50% opacity */
-        url('backgroundcv.jpg'); 
-    background-size: cover; /* This will cover the entire viewport of the .cv-row div */
-    background-repeat: no-repeat; /* Ensures the image doesn't repeat */
-    background-position: center; /* Centers the image in the div */
 }
 
 .cv-right-side {
@@ -140,7 +122,6 @@ p, a, span {
 
 .cv-row-title {
     padding: 40px 0 0 0;
-    font-family: 'Tangerine', 'Arial';
     font-weight: 700;
     text-align: center;
     font-size: 100px;
@@ -155,7 +136,6 @@ p, a, span {
 /* Styling for the titles within each experience (like "Job Experiences" and "Education") */
 
 .experiencesnames {
-    font-family: 'Tangerine', 'Arial';
     font-weight: 700;
     font-size: 3.125rem;
     position: relative; /** Enables positioning for pseudo-elements */
@@ -168,7 +148,6 @@ p, a, span {
     bottom: 0; /** Position at the bottom of the parent element */
     width: 80%; /** Set the width of the curves */
     height: 5px; /** Height of the border */
-    background-color: #252737; /** Border color */
     border-radius: 40%; /** Makes the ends circular */
 }
 
@@ -197,14 +176,12 @@ p, a, span {
 
 /* Styling for the main title of each individual job or education entry */
 .cv-title p {
+    color:#01ff00;
     font-size: 1.563rem;                        /* Smaller font than the section title */
     font-weight: bold;                      /* Make it bold */
 }
 
 /* Styling for the company name or institution name */
-.cv-company {
-    color: #88b5c5;                      /* Font size smaller than the main title */
-}
 .cv-date-location {
     display: flex;
     gap: 1px;
@@ -227,7 +204,6 @@ p, a, span {
 }
 
 .project-row {
-    background-color: #ecf7fb;
     padding: 20px 20px 30px 40px;
 }
 
