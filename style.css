@@ -17,7 +17,13 @@ body {
 
 .bodystyle {
     margin: 50px 50px 0px 50px;
-}  
+    width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+    box-sizing: border-box; /* This makes sure padding doesn't affect the actual box size */
+    max-width: 1200px; /* This can be any max-width you prefer */
+    margin: 0 auto;
+}
 
 .green-text {
     color: #01ff00;
